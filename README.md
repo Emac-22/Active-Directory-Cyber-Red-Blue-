@@ -192,14 +192,14 @@ Command in the PowerShell window to download and install Atomic Red Team
 
 
 ### Figure 7.
-MITRE ATT&CK Technique ID T119. #### <ins> Username: NewLocalUser </ins>
+MITRE ATT&CK Technique ID T119. <ins> Username: NewLocalUser </ins>
 
 <img width="507" alt="Install ART 2" src="https://github.com/user-attachments/assets/ecfcd10e-0c0e-4674-b19c-c2c958b69531" />
 
 
 
 ### Figure 8.
-Technique ID T119 of the MITRE ATT&CK Enterprise Matrix shown in Splunk #### (see NewLocalUser)
+Technique ID T119 of the MITRE ATT&CK Enterprise Matrix shown in Splunk <ins> (see NewLocalUser) </ins>
 
 
 <img width="506" alt="Telemtry Using Atomic Red Team 2" src="https://github.com/user-attachments/assets/1a68819f-b576-495f-b878-ccf7e223c7ce" />
