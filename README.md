@@ -1,7 +1,7 @@
 # Active-Directory-Cyber-Red-Blue-Team
 
 ## Executive Summary
-This project was designed to merge foundational knowledge of Active Directory (AD) management with practical cybersecurity applications. By setting up an AD environment and simulating real-world attack scenarios using Kali Linux, the project emphasized both defense (blue team) and offense (red team) techniques. Using Sysmon for detailed telemetry and Splunk for log analysis, the project demonstrated how to detect, analyze, and respond to security incidents in a Windows-based enterprise environment. The goal was to understand AD’s role in enterprise security while building hands-on skills in threat detection and mitigation.
+This project was designed to merge foundational knowledge of Active Directory (AD) management with practical cybersecurity applications. By setting up an AD environment and simulating real-world attack scenarios using Kali Linux and MITRE ATT&CK framework, the project emphasized both defense (blue team) and offense (red team) techniques. Using Sysmon for detailed telemetry and Splunk for log analysis, the project demonstrated how to detect, analyze, and respond to security incidents in a Windows-based enterprise environment. The goal was to understand AD’s role in enterprise security while building hands-on skills in threat detection and mitigation.
 
 
 ## Introduction
