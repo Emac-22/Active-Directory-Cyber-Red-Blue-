@@ -10,9 +10,9 @@ Active Directory is central to many enterprise networks, providing authenticatio
 
 ### Objective
 The primary goals of this project were:
--To set up a secure Active Directory environment and manage its components.
--To simulate and analyze attack scenarios using tools like Kali Linux to understand potential vulnerabilities.
--To monitor, detect, and respond to threats using Sysmon and Splunk, emphasizing real-time incident detection and response.
+- To set up a secure Active Directory environment and manage its components.
+- To simulate and analyze attack scenarios using tools like Kali Linux to understand potential vulnerabilities.
+- To monitor, detect, and respond to threats using Sysmon and Splunk, emphasizing real-time incident detection and response.
 
 ### Scope
 The project covers the setup of a Windows Server 2019-based Active Directory environment using VirtualBox, the use of Kali Linux to simulate brute force and other attack scenarios, and the integration of monitoring tools to detect and respond to these events. The scope also includes configuring group policies, managing user privileges, and analyzing telemetry data to gain insights into potential attack vectors.
