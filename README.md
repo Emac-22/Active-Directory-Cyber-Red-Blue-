@@ -95,7 +95,7 @@ The following command was executed in PowerShell (with administrator privileges)
 The following command downloaded and unpacked ART on the target system:
 
 #### powershell:
-`Invoke-WebRequest -Uri https://github.com/redcanaryco/atomic-red-team/archive/master.zip -OutFile atomic-red-team.zip; Expand-Archive .\atomic-red-team.zip -DestinationPath C:\AtomicRedTeam`
+`IEX (IWR 'https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1' - UseBasicParsing);`
 **Dependencies were installed by confirming prompts during setup.**
 
 #### <ins> Testing MITRE ATT&CK Techniques: </ins>
