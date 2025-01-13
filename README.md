@@ -214,10 +214,10 @@ Technique ID T119 of the MITRE ATT&CK Enterprise Matrix shown in Splunk <ins> (s
 
 
 ## References
-SOC Automation Project. SOC Automation for Beginners [YouTube Playlist]. Retrieved from
-https://www.youtube.com/playlist?list=PLG6KGSNK4PuBWmX9NykU0wnWamjxdKhDJ.
+Active Directory Project. Retrieved from
+[https://www.youtube.com/playlist?list=PLG6KGSNK4PuBWmX9NykU0wnWamjxdKhDJ](https://youtu.be/5OessbOgyEo?si=JV84QHXRawQcrzk_).
 
-### Note: This YouTube playlist by SOC Automation for Beginners provided essential insights and practical steps for setting up and configuring a SOC environment. The videos offered a detailed, beginner-friendly approach to integrating Wazuh, TheHive, and Shuffle, making it an invaluable resource throughout the lab project.
+### Note: This YouTube playlist by MYDFIR provided essential insights and practical steps for setting up and configuring a Active Directory environment. The videos offered a detailed, beginner-friendly approach, making it an invaluable resource throughout the lab project.
 
 
 
