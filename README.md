@@ -77,11 +77,11 @@ The project covers the setup of a Windows Server 2019-based Active Directory env
 #### <ins> Installation of Atomic Red Team (ART): </ins>
 To simulate MITRE ATT&CK techniques, Atomic Red Team was installed on the target Windows machine:
 
-PowerShell Execution Policy Bypass:
-The following command was executed in PowerShell (with administrator privileges) to allow scripts to run:
+PowerShell Installation Execution:
+The following command was executed in PowerShell (with administrator privileges) to install Atomic Red Team:
 
 #### powershell:
-`Set-ExecutionPolicy Bypass -Scope CurrentUser`
+`Install-AtomicRedTeam -getAtomics`
 
 
 #### <ins> Defender Exclusions for Atomic Red Team: </ins>
