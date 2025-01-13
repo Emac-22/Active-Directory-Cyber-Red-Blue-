@@ -65,7 +65,7 @@ The virtual environment consisted of:
 #### Brute Force Attack:
 
 - Using the command:
-#### hydra -t 1 -w 10 -l msmith -P passwords.txt rdp://192.168.10.100
+#### `hydra -t 1 -w 10 -l msmith -P passwords.txt rdp://192.168.10.100`
 
 - A brute force attack was conducted via Remote Desktop Protocol (RDP) targeting the msmith account. Upon successful login, event IDs such as 4625 (failed login), 4624 (successful login), 4634 (logoff), and 4776 (authentication attempt) were logged in Splunk. These logs provided crucial details about the attack sequence.
 
