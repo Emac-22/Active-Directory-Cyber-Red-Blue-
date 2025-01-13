@@ -22,42 +22,42 @@ The project covers the setup of a Windows Server 2019-based Active Directory env
 ### Architecture Design
 The virtual environment consisted of:
 
--Target Machine (target-pc): Connected to the emac.local domain and authenticated users via the domain controller.
--Domain Controller (ADDC01): Managed user accounts and domain policies through Active Directory.
--Splunk Server: Collected and analyzed logs for visualization and insights.
--Kali Linux Machine: Conducted simulated attacks.
+- Target Machine (target-pc): Connected to the emac.local domain and authenticated users via the domain controller.
+- Domain Controller (ADDC01): Managed user accounts and domain policies through Active Directory.
+- Splunk Server: Collected and analyzed logs for visualization and insights.
+- Kali Linux Machine: Conducted simulated attacks.
 
 ### Components
--Target Machine: Windows OS integrated with the emac.local domain.
--Domain Controller: Configured with Active Directory for user and policy management.
--Splunk Enterprise: Used for log collection, analysis, and dashboard creation.
--Kali Linux: Performed penetration testing and simulated attacks.
--Sysmon: Monitored and logged system activities for analysis.
+- Target Machine: Windows OS integrated with the emac.local domain.
+- Domain Controller: Configured with Active Directory for user and policy management.
+- Splunk Enterprise: Used for log collection, analysis, and dashboard creation.
+- Kali Linux: Performed penetration testing and simulated attacks.
+- Sysmon: Monitored and logged system activities for analysis.
 
 ## Methodology
 ### 1.Active Directory Setup:
 
--Installed and configured Windows Server 2019 as a domain controller.
--Created organizational units (OUs), users, and groups to replicate a corporate hierarchy.
--Configured group policies for user privileges, password policies, and security settings.
--Added target machine to the domain and created domain accounts (msmith and jsmith).
+- Installed and configured Windows Server 2019 as a domain controller.
+- Created organizational units (OUs), users, and groups to replicate a corporate hierarchy.
+- Configured group policies for user privileges, password policies, and security settings.
+- Added target machine to the domain and created domain accounts (msmith and jsmith).
 
 ### 2.Attack Simulation with Kali Linux:
 
--Conducted brute force attacks on AD accounts to simulate password-cracking attempts.
--Performed network scans and reconnaissance to identify potential vulnerabilities.
--Executed other red team tactics to mimic real-world adversarial behavior.
+- Conducted brute force attacks on AD accounts to simulate password-cracking attempts.
+- Performed network scans and reconnaissance to identify potential vulnerabilities.
+- Executed other red team tactics to mimic real-world adversarial behavior.
 
 ### 3.Telemetry Collection with Sysmon:
 
--Configured Sysmon on all endpoints to capture detailed logs, including process creation, network connections, and file modifications.
--Generated logs during attack simulations to understand the system’s responses.
+- Configured Sysmon on all endpoints to capture detailed logs, including process creation, network connections, and file modifications.
+- Generated logs during attack simulations to understand the system’s responses.
 
 ### 4.Log Analysis with Splunk:
 
--Ingested Sysmon logs into Splunk for centralized monitoring.
--Created dashboards to visualize attack patterns and identify anomalies.
--Correlated events to reconstruct the attack timeline and assess the effectiveness of security measures.
+- Ingested Sysmon logs into Splunk for centralized monitoring.
+- Created dashboards to visualize attack patterns and identify anomalies.
+- Correlated events to reconstruct the attack timeline and assess the effectiveness of security measures.
 
 
 ## Testing and Validation
@@ -78,21 +78,21 @@ Nmap was utilized to identify open ports and services on the target machine. Sys
 Simulated scenarios of attackers attempting to elevate privileges. Logs from these activities were processed and correlated in Splunk, providing insights into potential vulnerabilities.
 
 ### Log Analysis and Insights
--Event Detection: Splunk dashboards visualized real-time system activities, flagging anomalies such as repeated login attempts and unauthorized access.
--Correlated Events: Logs like Event ID 4625, 4624, 4634, and 4776 were analyzed to trace the attack path and determine its impact.
--Actionable Insights: Detailed event correlations helped identify the root cause of the attacks, enabling a better understanding of threat dynamics and response strategies.
+- Event Detection: Splunk dashboards visualized real-time system activities, flagging anomalies such as repeated login attempts and unauthorized access.
+- Correlated Events: Logs like Event ID 4625, 4624, 4634, and 4776 were analyzed to trace the attack path and determine its impact.
+- Actionable Insights: Detailed event correlations helped identify the root cause of the attacks, enabling a better understanding of threat dynamics and response strategies.
 
 ## Conclusion
 The Active Directory and Cybersecurity Project demonstrated the importance of integrating security practices with AD management. By simulating attacks and analyzing system responses, the project highlighted:
 
--The critical role of AD in enterprise security and its potential vulnerabilities.
--The effectiveness of telemetry tools like Sysmon in generating actionable security data.
--The value of log analysis platforms like Splunk in detecting and responding to incidents.
+- The critical role of AD in enterprise security and its potential vulnerabilities.
+- The effectiveness of telemetry tools like Sysmon in generating actionable security data.
+- The value of log analysis platforms like Splunk in detecting and responding to incidents.
 
 ### Key Takeaways
--Active Directory requires continuous monitoring and robust security configurations to mitigate threats.
--Simulated attack scenarios are invaluable for understanding real-world adversarial techniques and improving defense mechanisms.
--Combining telemetry tools and SIEM platforms enhances incident detection and response capabilities.
+- Active Directory requires continuous monitoring and robust security configurations to mitigate threats.
+- Simulated attack scenarios are invaluable for understanding real-world adversarial techniques and improving defense mechanisms.
+- Combining telemetry tools and SIEM platforms enhances incident detection and response capabilities.
 
 
 
