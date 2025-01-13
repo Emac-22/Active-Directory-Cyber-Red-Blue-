@@ -108,7 +108,8 @@ Hive, Shuffle, and the SOC analyst. The diagram is essential for understanding t
 and serves as a blueprint for the subsequent setup and integration steps.
 
 
-<img width="330" alt="LS9" src="https://github.com/user-attachments/assets/610909e9-ccdf-4b49-b1e8-296e5aba1eaf">
+<img width="954" alt="Virtual Box Machines" src="https://github.com/user-attachments/assets/bd5866fa-0ec1-4c92-8cab-f074c6d5539f" />
+
 
 
 
