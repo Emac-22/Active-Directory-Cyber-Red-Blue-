@@ -78,9 +78,9 @@ Nmap was utilized to identify open ports and services on the target machine. Sys
 Simulated scenarios of attackers attempting to elevate privileges. Logs from these activities were processed and correlated in Splunk, providing insights into potential vulnerabilities.
 
 ### Log Analysis and Insights
-- Event Detection: Splunk dashboards visualized real-time system activities, flagging anomalies such as repeated login attempts and unauthorized access.
-- Correlated Events: Logs like Event ID 4625, 4624, 4634, and 4776 were analyzed to trace the attack path and determine its impact.
-- Actionable Insights: Detailed event correlations helped identify the root cause of the attacks, enabling a better understanding of threat dynamics and response strategies.
+- #### Event Detection: Splunk dashboards visualized real-time system activities, flagging anomalies such as repeated login attempts and unauthorized access.
+- #### Correlated Events: Logs like Event ID 4625, 4624, 4634, and 4776 were analyzed to trace the attack path and determine its impact.
+- #### Actionable Insights: Detailed event correlations helped identify the root cause of the attacks, enabling a better understanding of threat dynamics and response strategies.
 
 ## Conclusion
 The Active Directory and Cybersecurity Project demonstrated the importance of integrating security practices with AD management. By simulating attacks and analyzing system responses, the project highlighted:
