@@ -96,7 +96,7 @@ The following command downloaded and unpacked ART on the target system:
 
 #### powershell:
 `Invoke-WebRequest -Uri https://github.com/redcanaryco/atomic-red-team/archive/master.zip -OutFile atomic-red-team.zip; Expand-Archive .\atomic-red-team.zip -DestinationPath C:\AtomicRedTeam`
-** Dependencies were installed by confirming prompts during setup. **
+**Dependencies were installed by confirming prompts during setup.**
 
 #### <ins> Testing MITRE ATT&CK Techniques: </ins>
 
@@ -184,14 +184,32 @@ A Splunk dashboard screenshot showing the detection of events.
 
 
 ### Figure 6.
-This screenshot demonstrates the email notification sent to analysts as part of the Shuffle
-workflow. Upon receiving a Wazuh alert, the Shuffle automation workflow not only logged the incident
-in The Hive but also triggered an email notification to the designated analyst team. This step validates
-the integration of Shuffle in automating response actions, ensuring that analysts are promptly notified of
-security events for faster incident handling and response.
+Command in the PowerShell window to download and install Atomic Red Team
 
 
-<img width="484" alt="LS3" src="https://github.com/user-attachments/assets/00f2cde8-7f75-440b-84ba-056bf3977760">
+<img width="510" alt="Install ART" src="https://github.com/user-attachments/assets/472f93f7-a344-4f71-b162-e38858821aa9" />
+
+
+
+### Figure 7.
+MITRE ATT&CK Technique ID T119. #### <ins> Username: NewLocalUser </ins>
+
+<img width="507" alt="Install ART 2" src="https://github.com/user-attachments/assets/ecfcd10e-0c0e-4674-b19c-c2c958b69531" />
+
+
+
+### Figure 8.
+Technique ID T119 of the MITRE ATT&CK Enterprise Matrix shown in Splunk #### (see NewLocalUser)
+
+
+<img width="506" alt="Telemtry Using Atomic Red Team 2" src="https://github.com/user-attachments/assets/1a68819f-b576-495f-b878-ccf7e223c7ce" />
+
+<img width="508" alt="Telemtry Using Atomic Red Team" src="https://github.com/user-attachments/assets/9186fa69-8c45-4e9b-9910-66b8bb7b204f" />
+
+
+
+
+
 
 
 
