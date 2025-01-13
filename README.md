@@ -136,7 +136,8 @@ A screenshot of the Sysmon configuration file detailing how events were logged a
 A screenshot of the Kali Linux terminal showing the Hydra brute force command and its successful execution against the RDP service.
 
 
-<img width="397" alt="Hydra" src="https://github.com/user-attachments/assets/6f0ea106-b2e1-495c-8331-25dbd579114c" />
+![IMG_3944](https://github.com/user-attachments/assets/ed5cc29d-8cf3-4e7e-83c0-743d2bbce789)
+
 
 
 
