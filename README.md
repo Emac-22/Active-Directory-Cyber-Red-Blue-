@@ -69,38 +69,39 @@ The virtual environment consisted of:
 
 - A brute force attack was conducted via Remote Desktop Protocol (RDP) targeting the msmith account. Upon successful login, event IDs such as 4625 (failed login), 4624 (successful login), 4634 (logoff), and 4776 (authentication attempt) were logged in Splunk. These logs provided crucial details about the attack sequence.
 
-#### Network Scans:
+#### <ins> Network Scans:</ins>
 
 - Nmap was utilized to identify open ports and services on the target machine. Sysmon captured unauthorized scanning activities, which Splunk dashboards highlighted for further analysis.
 
 
-#### Installation of Atomic Red Team (ART):
+#### <ins> Installation of Atomic Red Team (ART): </ins>
 To simulate MITRE ATT&CK techniques, Atomic Red Team was installed on the target Windows machine:
 
 PowerShell Execution Policy Bypass:
 The following command was executed in PowerShell (with administrator privileges) to allow scripts to run:
 
-powershell
+#### powershell:
 `Set-ExecutionPolicy Bypass -Scope CurrentUser`
 
 
-Defender Exclusions for Atomic Red Team:
-To prevent Microsoft Defender from blocking ART files, the entire C:\ drive was excluded via Windows Security:
+#### <ins> Defender Exclusions for Atomic Red Team: </ins>
+- To prevent Microsoft Defender from blocking ART files, the entire C:\ drive was excluded via Windows Security:
 
-Path: Virus & Threat Protection > Manage Settings > Exclusions > Add Folder.
-Administrator privileges were required to confirm the exclusion.
+#### Path: 
+- Virus & Threat Protection > Manage Settings > Exclusions > Add Folder.
+- Administrator privileges were required to confirm the exclusion.
 
-Atomic Red Team Installation:
+#### <ins> Atomic Red Team Installation: </ins>
 The following command downloaded and unpacked ART on the target system:
 
-powershell
+#### powershell:
 `Invoke-WebRequest -Uri https://github.com/redcanaryco/atomic-red-team/archive/master.zip -OutFile atomic-red-team.zip; Expand-Archive .\atomic-red-team.zip -DestinationPath C:\AtomicRedTeam`
-Dependencies were installed by confirming prompts during setup.
+** Dependencies were installed by confirming prompts during setup. **
 
-Testing MITRE ATT&CK Techniques:
+#### <ins> Testing MITRE ATT&CK Techniques: </ins>
 
-After installation, the C:\AtomicRedTeam\atomics directory provided access to technique IDs corresponding to MITRE ATT&CK techniques.
-For example, Technique ID T119 was explored for testing and mapped back to the MITRE ATT&CK Enterprise Matrix for further understanding.
+- After installation, the C:\AtomicRedTeam\atomics directory provided access to technique IDs corresponding to MITRE ATT&CK techniques.
+- For example, Technique ID T119 was explored for testing and mapped back to the MITRE ATT&CK Enterprise Matrix for further understanding.
 
 ### Log Analysis and Insights
 - #### Event Detection:
