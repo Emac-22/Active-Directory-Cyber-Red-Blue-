@@ -9,7 +9,7 @@ This project was designed to merge foundational knowledge of Active Directory (A
 Active Directory is central to many enterprise networks, providing authentication, authorization, and directory services. Its widespread use makes it a prime target for attackers, emphasizing the need for robust security measures. This project focuses on the dual objectives of configuring a functional AD environment and applying cybersecurity techniques to identify and respond to simulated attacks.
 
 ### Objective
-The primary goals of this project were:
+<ins> The primary goals of this project were: </ins>
 - To set up a secure Active Directory environment and manage its components.
 - To simulate and analyze attack scenarios using tools like Kali Linux to understand potential vulnerabilities.
 - To monitor, detect, and respond to threats using Sysmon and Splunk, emphasizing real-time incident detection and response.
@@ -20,7 +20,7 @@ The project covers the setup of a Windows Server 2019-based Active Directory env
 
 ## Project Overview
 ### Architecture Design
-The virtual environment consisted of:
+<ins> The virtual environment consisted of: </ins>
 
 - Target Machine (target-pc): Connected to the emac.local domain and authenticated users via the domain controller.
 - Domain Controller (ADDC01): Managed user accounts and domain policies through Active Directory.
