@@ -62,7 +62,7 @@ The virtual environment consisted of:
 
 ## Testing and Validation
 ### Simulated Attack Scenarios
-#### Brute Force Attack:
+#### <ins> Brute Force Attack:</ins>
 
 - Using the command:
 #### `hydra -t 1 -w 10 -l msmith -P passwords.txt rdp://192.168.10.100`
@@ -73,9 +73,34 @@ The virtual environment consisted of:
 
 - Nmap was utilized to identify open ports and services on the target machine. Sysmon captured unauthorized scanning activities, which Splunk dashboards highlighted for further analysis.
 
-#### Privilege Escalation Attempts:
 
-- Simulated scenarios of attackers attempting to elevate privileges. Logs from these activities were processed and correlated in Splunk, providing insights into potential vulnerabilities.
+#### Installation of Atomic Red Team (ART):
+To simulate MITRE ATT&CK techniques, Atomic Red Team was installed on the target Windows machine:
+
+PowerShell Execution Policy Bypass:
+The following command was executed in PowerShell (with administrator privileges) to allow scripts to run:
+
+powershell
+`Set-ExecutionPolicy Bypass -Scope CurrentUser`
+
+
+Defender Exclusions for Atomic Red Team:
+To prevent Microsoft Defender from blocking ART files, the entire C:\ drive was excluded via Windows Security:
+
+Path: Virus & Threat Protection > Manage Settings > Exclusions > Add Folder.
+Administrator privileges were required to confirm the exclusion.
+
+Atomic Red Team Installation:
+The following command downloaded and unpacked ART on the target system:
+
+powershell
+`Invoke-WebRequest -Uri https://github.com/redcanaryco/atomic-red-team/archive/master.zip -OutFile atomic-red-team.zip; Expand-Archive .\atomic-red-team.zip -DestinationPath C:\AtomicRedTeam`
+Dependencies were installed by confirming prompts during setup.
+
+Testing MITRE ATT&CK Techniques:
+
+After installation, the C:\AtomicRedTeam\atomics directory provided access to technique IDs corresponding to MITRE ATT&CK techniques.
+For example, Technique ID T119 was explored for testing and mapped back to the MITRE ATT&CK Enterprise Matrix for further understanding.
 
 ### Log Analysis and Insights
 - #### Event Detection:
