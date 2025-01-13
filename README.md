@@ -64,18 +64,18 @@ The virtual environment consisted of:
 ### Simulated Attack Scenarios
 #### 1.Brute Force Attack
 
-Using the command:
+- Using the command:
 #### hydra -t 1 -w 10 -l msmith -P passwords.txt rdp://192.168.10.100
 
-A brute force attack was conducted via Remote Desktop Protocol (RDP) targeting the msmith account. Upon successful login, event IDs such as 4625 (failed login), 4624 (successful login), 4634 (logoff), and 4776 (authentication attempt) were logged in Splunk. These logs provided crucial details about the attack sequence.
+- A brute force attack was conducted via Remote Desktop Protocol (RDP) targeting the msmith account. Upon successful login, event IDs such as 4625 (failed login), 4624 (successful login), 4634 (logoff), and 4776 (authentication attempt) were logged in Splunk. These logs provided crucial details about the attack sequence.
 
 #### 2.Network Scans
 
-Nmap was utilized to identify open ports and services on the target machine. Sysmon captured unauthorized scanning activities, which Splunk dashboards highlighted for further analysis.
+- Nmap was utilized to identify open ports and services on the target machine. Sysmon captured unauthorized scanning activities, which Splunk dashboards highlighted for further analysis.
 
 #### 3.Privilege Escalation Attempts
 
-Simulated scenarios of attackers attempting to elevate privileges. Logs from these activities were processed and correlated in Splunk, providing insights into potential vulnerabilities.
+- Simulated scenarios of attackers attempting to elevate privileges. Logs from these activities were processed and correlated in Splunk, providing insights into potential vulnerabilities.
 
 ### Log Analysis and Insights
 - #### Event Detection:
