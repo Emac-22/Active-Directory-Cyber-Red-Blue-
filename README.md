@@ -102,61 +102,57 @@ The Active Directory and Cybersecurity Project demonstrated the importance of in
 ## Figures
 
 ### Figure 1.
-This diagram illustrates the logical layout of the components involved in the SOC Automation project. It
-visualizes the flow of data between key components such as the Windows client, Wazuh manager, The
-Hive, Shuffle, and the SOC analyst. The diagram is essential for understanding the project’s architecture
-and serves as a blueprint for the subsequent setup and integration steps.
+This diagram illustrates the logical layout of the components involved in the Active Directory and Cybersecurity project. It visualizes the flow of data and interactions between key components, including the domain controller (ADDC01), target machine, Kali Linux (used for attack simulations), and Splunk for log analysis. The diagram provides a clear overview of the project's architecture and serves as a blueprint for understanding the integration of offensive and defensive elements.
 
 
-<img width="954" alt="Virtual Box Machines" src="https://github.com/user-attachments/assets/bd5866fa-0ec1-4c92-8cab-f074c6d5539f" />
+<img width="380" alt="Diagram" src="https://github.com/user-attachments/assets/e4bb13cf-cd81-40dd-af8c-a72ed9af44fc" />
+
 
 
 
 
 ### Figure 2.
-This screenshot displays the Wazuh dashboard showing the droplets created for the Wazuh
-server and TheHive server. The droplets are virtual machines (VMs) that have been set up to host the
-Wazuh and TheHive platforms, which are integral to the SOC Automation project. The configuration of
-these droplets allows for the management and monitoring of security events, enabling effective incident
-response and automation workflows.
+A screenshot of the Active Directory interface showing the user accounts (msmith and jsmith) and organizational units.
 
 
-<img width="929" alt="LS8" src="https://github.com/user-attachments/assets/7508e216-b537-4d1d-9dbb-d2c5b5e8a45a">
+<img width="509" alt="AD UC 3" src="https://github.com/user-attachments/assets/02a1fce2-d803-4ad3-b41c-34c98b9002f1" />
+
+<img width="510" alt="DC Config" src="https://github.com/user-attachments/assets/7c9a40c9-c86c-42c2-a3e3-89133a5fec46" />
+
+
+<img width="332" alt="Join Domain 2" src="https://github.com/user-attachments/assets/cdf0b9af-d56e-4662-90db-8b4f381932f9" />
+
+
 
 
 ### Figure 3.
-This screenshot shows the execution of the Mimikatz command in PowerShell with
-administrative privileges. Mimikatz is used here to simulate a security event, which is then captured by
-Wazuh for telemetry configuration. The command demonstrates the process of generating test events to
-help validate the functionality of the Wazuh platform’s detection capabilities for specific threats, such as
-credential dumping. This step is crucial in configuring and fine-tuning the telemetry within the SOC
-automation workflow.
+A screenshot of the Sysmon configuration file detailing how events were logged and monitored.
 
 
-<img width="450" alt="LS6" src="https://github.com/user-attachments/assets/7db1b387-6294-4c61-82df-0b63d513cdbe">
+<img width="369" alt="Inputs Config File" src="https://github.com/user-attachments/assets/6fbbb8d6-74ea-4497-87d5-ec217c682e7d" />
+
 
 ### Figure 4.
-This screenshot showcases the workflow built in Shuffle.io for automating the detection and
-response processes. The workflow integrates Wazuh alerts with The Hive, enabling automated responses
-when a threat is detected. In this case, the workflow specifically handles Mimikatz detection, extracting
-file hashes and checking their reputation on VirusTotal, before sending the data to The Hive for further
-case management. This step demonstrates how Shuffle.io is utilized to streamline incident response and
-automate security processes within the SOC environment.
+A screenshot of the Kali Linux terminal showing the Hydra brute force command and its successful execution against the RDP service.
 
 
-<img width="895" alt="LS2" src="https://github.com/user-attachments/assets/45218820-8f00-4c80-995a-913fa6d23777">
+<img width="397" alt="Hydra" src="https://github.com/user-attachments/assets/6f0ea106-b2e1-495c-8331-25dbd579114c" />
+
 
 
 ### Figures 5.
-This screenshot illustrates the alert that was automatically created in The Hive dashboard as
-part of the Shuffle workflow integration. Upon detecting Mimikatz activity on the endpoint—simulated
-by running Mimikatz in PowerShell as part of the test—Wazuh triggered an alert. This alert was then
-routed to The Hive, where a case was automatically generated for further investigation and response.
-This process demonstrates the seamless integration of Wazuh, Shuffle, and The Hive for automated
-incident management in the SOC environment.
+A Splunk dashboard screenshot showing the detection of events.
 
 
-<img width="954" alt="LS4" src="https://github.com/user-attachments/assets/64624018-31ee-4c9f-b2b7-755a147095db">
+<img width="509" alt="Splunk Event Codes" src="https://github.com/user-attachments/assets/c39fc5af-434c-40c0-955a-8d2dee4a08a0" />
+
+<img width="509" alt="Splunk Results 3" src="https://github.com/user-attachments/assets/37423be5-822f-475f-bf7a-bba17c8434a6" />
+
+<img width="508" alt="Splunk Results" src="https://github.com/user-attachments/assets/7b6ac826-dbd8-4470-bfe0-447ee5eafd26" />
+
+<img width="508" alt="Splunk Results 4" src="https://github.com/user-attachments/assets/2fcddd7b-818d-4389-a3f2-81e40d1d1cce" />
+
+
 
 
 
